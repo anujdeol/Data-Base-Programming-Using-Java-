@@ -1,0 +1,67 @@
+Assignment Submission Form==========================================================================
+I/we declare that the attached assignment is my/our own work in accordance with Humber Academic Policy. Nopart of this assignment has been copied manually or electronically from any other source (including web sites) ordistributed to other students.
+Name(s):  Anuj Deol 
+Student ID(s): N01550000
+
+Assignment 5
+
+1.
+In ca.myjava.query package
+•
+The two classes should do the same task
+-
+query the Country table in your Oracle
+database and show the info of countries which have LifeExpectancy between two values.
+•
+Use static SQL (Statement) or PreparedStatement to perform the query as described by
+the class names.
+
+The class is imported to allow for JDBC functionality.
+The "SqlInfo" class is imported to retrieve database connection information.
+The main method is defined.
+The MySQL JDBC driver is loaded using the "Class.forName" method.
+A connection to the database is established using the "DriverManager.getConnection" method.
+A PreparedStatement is created using the SQL query string "SELECT * FROM COUNTRY WHERE lifeexpectancy BETWEEN 10 AND 80". This is a parameterized query, allowing for the use of variables to replace certain parts of the query.
+The PreparedStatement is executed using the "executeQuery" method, which returns a ResultSet.
+The ResultSet is iterated through using a while loop, printing out each row's "Country" and "Life Exp" data.
+If any exceptions occur during the process, an error message is printed out
+
+
+
+
+2.
+In ca.myjava.unknown package
+Code the AnySQL class which accepts user’s input of SQL command from the console
+and execute the command using
+JDBC API. Show the query results or info of excuting
+the SQL command on the console.
+
+
+This program allows a user to enter any SQL command and execute it on a MySQL database using JDBC. The program uses a Scanner object to take user input for the SQL command to execute. It then creates a Statement object and executes the SQL command using the executeQuery() method. Finally, it loops through the ResultSet object to print out the results of the query.
+
+
+
+
+
+3.
+In ca.myjava.update package
+•
+Use the three classes to run 3 SQL statements: insert, update and delete on the Country
+table. Each class will run only one of the
+above SQL statements.
+•
+The approach to run the SQL statement for each class is described by the class name
+
+
+
+The class is imported to allow for JDBC functionality.
+The "SqlInfo" class is imported to retrieve database connection information.
+The main method is defined.
+The MySQL JDBC driver is loaded using the "Class.forName" method.
+A connection to the database is established using the "DriverManager.getConnection" method.
+Four PreparedStatements are created: one for inserting a new row, one for updating an existing row, one for deleting a row, and one for selecting all rows from the table.
+Each PreparedStatement is executed using the "executeQuery" method.
+The ResultSet is iterated through using a while loop, printing out each row's "Country" and "Life Exp" data.
+If any exceptions occur during the process, an error message is printed out.
+
+
